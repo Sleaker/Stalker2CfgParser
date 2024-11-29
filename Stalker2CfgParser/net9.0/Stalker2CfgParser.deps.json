@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Stalker2CfgParser/1.0.0": {
+        "runtime": {
+          "Stalker2CfgParser.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Stalker2CfgParser/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

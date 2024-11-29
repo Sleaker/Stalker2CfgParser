@@ -1,0 +1,14 @@
+T__0=1
+T__1=2
+T__2=3
+SINGLE_LINE_COMMENT=4
+LITERAL=5
+STRING=6
+PATH=7
+NUMBER=8
+SYMBOL=9
+WS=10
+': struct.begin'=1
+'struct.end'=2
+'='=3
+'-'=9
