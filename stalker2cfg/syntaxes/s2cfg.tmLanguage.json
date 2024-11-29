@@ -1,0 +1,63 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "stalker2cfg",
+	"patterns": [
+		{
+			"name": "keyword.control.s2cfg",
+			"match": "\\b(struct\\.begin|struct\\.end)\\b"
+		},
+		{
+			"begin": "\\[",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.bracket.square.s2cfg"
+				}
+			},
+			"end": "\\]",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.bracket.square.s2cfg"
+				}
+			}
+		},
+		{
+			"name": "constant.numeric.float.s2cfg",
+			"match": "(?<![\\w\\d.])\\d+(\\.\\d*)?([f])?"
+		},
+		{
+			"name": "constant.numeric.integer.s2cfg",
+			"match": "(?<![\\w\\d.])\\d+(?![pPeE.0-9])"
+		},
+		{
+			"name": "comment.line.double-slash.s2cfg",
+			"match": "(//.*$)"
+		},
+		{
+			"name": "constant.language.s2cfg",
+			"match": "\\b(true|false)\\b"
+		},
+		{
+			"match": "([A-Za-z_\\d]+)\\s*(?=:)(?!::)",
+			"captures": {
+				"1": {
+					"name": "support.class.s2cfg"
+				}
+			}
+		},
+		{
+			"match": "([A-Za-z_\\d]+)\\s*(?==)",
+			"captures": {
+				"1": {
+					"name": "support.type.property-name.s2cfg"
+				}
+			}
+		},
+		{
+			"name": "string.unquoted.s2cfg",
+			"match": "(?<==|,)\\s*(?=\\b|/)(?!true|false)([A-Za-z/][A-Za-z\\d:_/\\.']+)"
+		}
+	],
+	"repository": {
+	},
+	"scopeName": "source.stalker2cfg"
+}

@@ -1,0 +1,37 @@
+{
+  "name": "stalker2cfg",
+  "author": "Nicholas Minkler",
+  "url": "https://github.com/Sleaker",
+  "displayName": "Stalker2Cfg",
+  "description": "Language parser for stalker 2 cfg files",
+  "version": "1.0.0",
+  "repository": "https://github.com/Sleaker/Stalker2CfgParser",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "s2cfg",
+        "aliases": [
+          "stalker2cfg",
+          "s2cfg"
+        ],
+        "extensions": [
+          ".cfg"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "s2cfg",
+        "scopeName": "source.stalker2cfg",
+        "path": "./syntaxes/s2cfg.tmLanguage.json"
+      }
+    ]
+  }
+}
