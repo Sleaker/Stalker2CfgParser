@@ -6,6 +6,13 @@ This project was create using `yo code` and selecting Language Support.
 
 ### Building / Installing
 
+#### VSCode
 - [Install vsce](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) 
 - run `vsce package` from the termal
 - Install the extension in VSCode using the 'Install from VSIX' option
+
+#### Visual Studio
+
+- Navigate to `%userprofile%\.vs\Extensions`
+- Create a new Folder `stalker2cfg`
+- Copy [the syntaxes](./syntaxes/) folder into `stalker2cfg`

@@ -2,8 +2,9 @@
 
 This project includes parser and lexer tools for the Stalker 2 `.cfg` file format.
 
-- [VSCode Language Extension](./stalker2cfg-vscode/README.md)
-- [s2cfg.tmLanguage.json](./stalker2cfg-vscode/syntaxes/s2cfg.tmLanguage.json) - TextMate syntax definition file
+- [VSCode Language Extension](./stalker2cfg-vscode)
+- [s2cfg.tmLanguage.json](./stalker2cfg-vscode/syntaxes/s2cfg.tmLanguage.json) - TextMate syntax definition file (JSON)
+- [s2cfg.tmLanguage](./stalker2cfg-vscode/syntaxes/s2cfg.tmLanguage) - TextMate syntax definition file (XML) - For use with Visual Studio
 - [Stalker2Cfg.g4](./Stalker2CfgParser/grammar/Stalker2Cfg.g4) - ANTLR4 Grammar Definition file
 
 ### Recommended Reading

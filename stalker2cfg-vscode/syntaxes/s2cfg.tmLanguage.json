@@ -1,6 +1,8 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "stalker2cfg",
+	"fileTypes": ["cfg"],
+	"firstLineMatch": ".*\\bstruct\\.begin.*",
 	"patterns": [
 		{
 			"name": "keyword.control.s2cfg",
