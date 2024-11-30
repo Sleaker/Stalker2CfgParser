@@ -1,3 +1,7 @@
+### 1.1.0
+- Add simple Formatter to vscode extension
+- Note: Please manually uninstall any previous versions of the syntax hilighter
+
 ### 1.0.2
 - Better parsing of percentages
 - fix float parsing to always have a decimal so it doesn't capture integers
