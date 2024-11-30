@@ -21,13 +21,13 @@ function format(document: TextDocument) {
         if (lineText.includes("struct.end")) {
             indent--;
         }
-        const ws = indent * 3;
+        // In case there are unmatched struct ends, don't escape past the start
+        const ws = Math.max(indent * 3, 0);
 
-        lineText = lineText.padStart(lineText.length + ws);
+        lineText = ' '.repeat(ws).concat(lineText);
         
         edits.push(TextEdit.replace(new Range(docLine.range.start, docLine.range.end), lineText));
 
-    
         if (lineText.includes("struct.begin")) {
             indent++;
         }
