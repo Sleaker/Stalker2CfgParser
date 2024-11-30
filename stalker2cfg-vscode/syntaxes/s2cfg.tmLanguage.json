@@ -24,11 +24,15 @@
 		},
 		{
 			"name": "constant.numeric.float.s2cfg",
-			"match": "(?<![\\w\\d.])\\d+(\\.\\d*)?([f])?"
+			"match": "(?<![\\w\\d.])\\d+\\.(\\d*)?([f])?"
 		},
 		{
 			"name": "constant.numeric.integer.s2cfg",
-			"match": "(?<![\\w\\d.])\\d+(?![pPeE.0-9])"
+			"match": "(?<![\\w\\d.])\\d+(?![\\.%])\\b"
+		},
+		{
+			"name": "constant.numeric.percentage.s2cfg",
+			"match": "(?<![\\w\\d.])\\d+%"
 		},
 		{
 			"name": "comment.line.double-slash.s2cfg",
@@ -56,7 +60,7 @@
 		},
 		{
 			"name": "string.unquoted.s2cfg",
-			"match": "(?<==|,)\\s*(?=\\b|/)(?!true|false)([A-Za-z/][A-Za-z\\d:_/\\.']+)"
+			"match": "(?<==|,)\\s*(?=\\b|\\/|\\.)(?!true|false)([A-Za-z\\/\\.][A-Za-z\\d:_\\/\\.']+)"
 		}
 	],
 	"repository": {

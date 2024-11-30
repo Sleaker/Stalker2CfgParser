@@ -46,13 +46,19 @@
         <key>name</key>
         <string>constant.numeric.float.s2cfg</string>
         <key>match</key>
-        <string>(?&lt;![\w\d.])\d+(\.\d*)?([f])?</string>
+        <string>(?&lt;![\w\d.])\d+\.(\d*)?([f])?</string>
       </dict>
       <dict>
         <key>name</key>
         <string>constant.numeric.integer.s2cfg</string>
         <key>match</key>
-        <string>(?&lt;![\w\d.])\d+(?![pPeE.0-9])</string>
+        <string>(?&lt;![\w\d.])\d+(?![\.%])\b</string>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>constant.numeric.percentage.s2cfg</string>
+        <key>match</key>
+        <string>(?&lt;![\w\d.])\d+%</string>
       </dict>
       <dict>
         <key>name</key>
@@ -94,7 +100,7 @@
         <key>name</key>
         <string>string.unquoted.s2cfg</string>
         <key>match</key>
-        <string>(?&lt;==|,)\s*(?=\b|/)(?!true|false)([A-Za-z/][A-Za-z\d:_/\.']+)</string>
+        <string>(?&lt;==|,)\s*(?=\b|\/|\.)(?!true|false)([A-Za-z\/\.][A-Za-z\d:_\/\.']+)</string>
       </dict>
     </array>
     <key>repository</key>

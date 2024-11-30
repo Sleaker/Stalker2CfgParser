@@ -4,7 +4,7 @@
   "url": "https://github.com/Sleaker",
   "displayName": "Stalker2Cfg",
   "description": "Language parser for stalker 2 cfg files",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": "https://github.com/Sleaker/Stalker2CfgParser",
   "engines": {
     "vscode": "^1.95.0"
